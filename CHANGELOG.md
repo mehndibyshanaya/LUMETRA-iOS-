@@ -1,8 +1,9 @@
 # Changelog
 
-## 0.1 — Camera foundation
-- Native AVFoundation capture session and preview
-- Photo and video capture
-- Front/rear switching and rear wide/ultra-wide selection
-- Tap focus, zoom, manual focus, ISO and shutter controls
-- Flash/torch controls and Photos saving
+## 0.1.0 — Foundation bundle
+- Added SwiftUI app entry point and camera interface.
+- Added AVFoundation photo/video capture foundation.
+- Added focus, zoom, flash, torch, and basic manual exposure controls.
+- Added XcodeGen project definition.
+- Added GitHub Actions workflows for unsigned and signed build attempts.
+- Documented device limitations and build requirements.

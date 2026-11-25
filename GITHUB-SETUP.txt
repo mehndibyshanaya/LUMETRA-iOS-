@@ -1,0 +1,16 @@
+LUMETRA GitHub upload checklist
+
+1. Create a new empty GitHub repository named LUMETRA.
+2. On the repository page, choose Add file > Upload files.
+3. Upload the CONTENTS of this ZIP (including the hidden .github folder).
+4. Commit the files to the main branch.
+5. Open Actions and run "LUMETRA - Build unsigned" first.
+6. Download the artifact from the completed workflow run.
+
+Important:
+- Keep the .github folder and both workflow YAML files in the repository.
+- GitHub website uploads may hide dot-folders. If .github is missing, create the folders and files using Add file > Create new file, with paths:
+  .github/workflows/ios-build-unsigned.yml
+  .github/workflows/ios-build-signed.yml
+- The unsigned IPA is not installable on iPhone until signed with a valid provisioning profile.
+- Do not upload private certificate files or passwords into the repository. Use GitHub Actions Secrets.

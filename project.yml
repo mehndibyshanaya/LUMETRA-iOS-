@@ -1,0 +1,40 @@
+name: LUMETRA
+
+options:
+  bundleIdPrefix: com.lumetra
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+
+targets:
+  LUMETRA:
+    type: application
+    platform: iOS
+    sources:
+      - path: LUMETRA
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lumetra.camera
+        PRODUCT_NAME: LUMETRA
+        INFOPLIST_KEY_CFBundleDisplayName: LUMETRA
+        INFOPLIST_KEY_NSCameraUsageDescription: "LUMETRA uses the camera to capture photos and videos."
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "LUMETRA saves captured photos and videos to your Photos library."
+        INFOPLIST_KEY_UIUserInterfaceStyle: Dark
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: "5.9"
+    info:
+      path: LUMETRA/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIViewControllerBasedStatusBarAppearance: true
